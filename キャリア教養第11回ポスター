@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>桜咲大学 文化祭ポスター</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#e55934;
+      --accent-2:#f6c85f;
+      --bg:#fffefc;
+      --card:#ffffff;
+      --muted:#666;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Noto Sans JP',system-ui,-apple-system,'Segoe UI',Roboto,'Hiragino Kaku Gothic ProN',Meiryo, sans-serif;background:linear-gradient(180deg,#fffefc 0%,#fffbf3 100%);color:#111}
+    .poster{max-width:900px;margin:24px auto;padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(255,255,255,0.95));box-shadow:0 12px 30px rgba(15,15,15,0.08);display:grid;grid-template-columns:1fr 360px;gap:24px}
+    header{grid-column:1/-1;display:flex;align-items:center;gap:18px}
+    .logo{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ff867a);display:flex;align-items:center;justify-content:center;color:white;font-weight:900;font-size:20px}
+    h1{margin:0;font-size:34px;line-height:1.05}
+    .subtitle{color:var(--muted);font-weight:700;margin-top:6px}
+    .main{padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(245,245,250,0.6),rgba(255,255,255,0.4));min-height:360px}
+    .big-event{font-size:20px;font-weight:700;color:var(--accent);margin-bottom:8px}
+    .desc{color:var(--muted);margin-bottom:14px}
+    .highlights{display:flex;gap:12px;flex-wrap:wrap}
+    .chip{background:var(--card);padding:10px 12px;border-radius:10px;box-shadow:0 6px 14px rgba(5,5,5,0.04);min-width:140px}
+    .right{padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#fffefc);min-height:360px}
+    .info{margin-bottom:12px}
+    .label{font-weight:700;color:#222;margin-bottom:6px}
+    .value{background:#fff;padding:10px;border-radius:8px;box-shadow:inset 0 1px 0 rgba(0,0,0,0.02)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700;border:none;cursor:pointer}
+    .btn-accent{background:var(--accent);color:white}
+    .btn-outline{background:transparent;border:2px solid var(--accent);color:var(--accent)}
+    footer{grid-column:1/-1;margin-top:12px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center}
+    .schedule{margin-top:10px;border-radius:10px;padding:12px;background:linear-gradient(180deg,#fff,#fff);box-shadow:0 6px 18px rgba(5,5,5,0.03)}
+    .map{height:120px;border-radius:8px;background:repeating-linear-gradient(45deg,#f9f3ef 0 10px,#fff 10px 20px);display:flex;align-items:center;justify-content:center;color:var(--muted)}
+    @media(print){.poster{box-shadow:none;border-radius:0;max-width:100%;grid-template-columns:1fr 1fr} .logo{width:64px;height:64px} .right{page-break-inside:avoid}}
+    @media(max-width:880px){.poster{grid-template-columns:1fr;gap:16px;padding:18px} .right{order:2} header{flex-direction:row;align-items:flex-start} h1{font-size:26px}}
+  </style>
+</head>
+<body>
+  <article class="poster" role="article" aria-labelledby="title">
+    <header>
+      <div class="logo" aria-hidden="true">桜</div>
+      <div>
+        <h1 id="title">桜咲大学 文化祭 〜春風フェスティバル2026〜</h1>
+        <div class="subtitle">日程：2026年4月10日（金）〜4月12日（日）　会場：桜咲大学キャンパス</div>
+      </div>
+    </header>
+
+    <section class="main" aria-labelledby="main-title">
+      <div class="big-event" id="main-title">見どころ</div>
+      <p class="desc">音楽ライブ・模擬店・ワークショップ・展示発表など、学生が企画する多彩なプログラムが揃います。家族連れや友だち同士で楽しめる3日間！</p>
+
+      <div class="highlights" role="list">
+        <div class="chip" role="listitem">
+          <div style="font-weight:800">メインステージ</div>
+          <div style="font-size:13px;color:var(--muted)">人気バンド・サークルライブ（11日夜に花火あり）</div>
+        </div>
+        <div class="chip" role="listitem">
+          <div style="font-weight:800">模擬店ストリート</div>
+          <div style="font-size:13px;color:var(--muted)">全国の味を再現する学生屋台</div>
+        </div>
+        <div class="chip" role="listitem">
+          <div style="font-weight:800">クリエイティブ展示</div>
+          <div style="font-size:13px;color:var(--muted)">映像・美術・ロボット展示コーナー</div>
+        </div>
+      </div>
+
+      <div class="schedule" aria-label="当日のスケジュール">
+        <strong>主なスケジュール（例）</strong>
+        <ul style="margin:8px 0 0 18px;color:var(--muted)">
+          <li>4/10（金）13:00 開会式、ワークショップ開始</li>
+          <li>4/11（土）10:00 模擬店オープン、18:00 メインステージ</li>
+          <li>4/12（日）11:00 展示公開、16:00 閉会式</li>
+        </ul>
+      </div>
+    </section>
+
+    <aside class="right" aria-labelledby="info-title">
+      <div class="info">
+        <div class="label" id="info-title">入場情報</div>
+        <div class="value">入場無料（有料イベントあり）</div>
+      </div>
+
+      <div class="info">
+        <div class="label">アクセス</div>
+        <div class="value">最寄り：桜咲駅（徒歩10分）／駐車場あり（台数限定）</div>
+      </div>
+
+      <div class="info">
+        <div class="label">問い合わせ</div>
+        <div class="value">文化祭実行委員会 info@sakurasaki-u.ac.jp</div>
+      </div>
+
+      <div style="margin-top:12px" class="map" role="img" aria-label="会場の簡易地図">会場マップ（ここに画像を差し替えてください）</div>
+
+      <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn btn-accent" onclick="openProgram()">プログラムを見る</button>
+        <a class="btn btn-outline" href="#" onclick="window.print();return false;">印刷する</a>
+      </div>
+
+      <div style="margin-top:12px;font-size:13px;color:var(--muted)">主催：桜咲大学 学生自治会</div>
+    </aside>
+
+    <footer>
+      <div>公式ハッシュタグ：#桜咲フェス2026</div>
+      <div>※天候や諸事情により変更になる場合があります</div>
+    </footer>
+  </article>
+
+  <script>
+    function openProgram(){
+      alert('プログラム一覧はサンプルです。ここにイベント詳細ページへのリンクを設定できます。');
+    }
+  </script>
+</body>
+</html>
